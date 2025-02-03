@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Product name </title>
+</head>
+
+<body>
+   <header style="background-color: #ffca3a;"> <h1>New Awesome Product</h1></header>
+
+  <main>
+    <img src="https://blob.sololearn.com/courses/np.png">
+
+    <p>This is a <i>new</i> and <b>awesome</b> product for you. Follow this <u>link</u> </p>
+    <!--I create three elements, a heading, img and paragraph "p" -->
+
+    <!-- This is an unordered list-->
+    <h2>Features</h2>
+    <ul>
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+    </ul>
+    <h2>Order now!</h2>
+
+
+<!-- -->
+
+    <form>
+        <!-- for en label hace referencia al id en el input para que cuando
+        se pulse sobre el label este se enfoque en el input-->
+        <label for="toSelectSize">Size:</label>
+        <select id="toSelectSize" name="size">
+        <option>Small</option>
+        </select>
+
+        <label for="toSelectColor">Color:</label>
+        <select id="toSelectColor" name="color">
+        <option>Red</option>
+        </select>
+        </br>
+
+        <label for="inputName">
+        Name:
+        </label>
+        <!--El atributo value agrega un valor real a diferencia del placeholder
+        que sirve de guia -->
+        <input type="text" id="inputName" name="name" value="Erik Perez"></br>
+
+        <label for="inputEmail">Email</label>
+        <input type="email" id="inputEmail" name="email" placeholder="email">
+        </br>
+
+        <!-- El input de tipo submit sirve para enviar el form, tambien puede llevar un value y un name-->
+        <input type="submit" value="Order now!" name="submit" style="border:none; border-radius:5px; background-color:black; color:white; padding:5px;" onclick="alert('Order Confirmed!')">
+
+    </form>
+  </main>
+  <footer style="background-color: #ffca3a;">
+    Made with ❤️ by CYBORG
+  </footer>
+</body>
+
+</html>
