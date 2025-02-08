@@ -15,8 +15,9 @@ var beat = new Audio("audio/beat.ogg");
 
 var buttonPlay = document.getElementById("play");
 
+//Mover robot
 
-
+//auto
 var srcArray = ["img/robot-l.png", "img/robot-c.png", "img/robot-r.png"];
 var colorArray = ["#FF00FF", "#FFFF00", "#33CC33"];
 
@@ -48,6 +49,7 @@ buttonStopDance.addEventListener("click", () => {
     clearInterval(intervalDance);
 });
 
+//crear intervalo
 function intervalDancing(robot) {
     intervalDance = danceRobot(robot);
 
@@ -55,3 +57,4 @@ function intervalDancing(robot) {
         clearInterval(intervalDance);
     });
 }
+//
