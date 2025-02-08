@@ -18,9 +18,6 @@ var beat = new Audio("audio/beat.ogg");
 var buttonPlay = document.getElementById("play");
 
 
-///Esto no es un comentario
-///Este es el comentario de juan'
-//Este es el comentario de Erik
 
 /* buttonPlay.addEventListener("click", () => {
   beat.play();
