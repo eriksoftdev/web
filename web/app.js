@@ -21,39 +21,40 @@ var buttonPlay = document.getElementById("play");
 var srcArray = ["img/robot-l.png", "img/robot-c.png", "img/robot-r.png"];
 var colorArray = ["#FF00FF", "#FFFF00", "#33CC33"];
 
+
 auto.addEventListener("click", () => {
-  beat.play();
-  intervalDancing(robot);
-  intervalDancing(robot1);
-  intervalDancing(robot2);
-  intervalDancing(robot3);
-  intervalDancing(robot4);
-  intervalDancing(robot5);
-  intervalDancing(robot6);
+    beat.play();
+    intervalDancing(robot);
+    intervalDancing(robot1);
+    intervalDancing(robot2);
+    intervalDancing(robot3);
+    intervalDancing(robot4);
+    intervalDancing(robot5);
+    intervalDancing(robot6);
 });
 
 function danceRobot(robot) {
-  //ring buffer
-  let i = 0;
-  return setInterval(function () {
-    div.style.backgroundColor = colorArray[i];
-    robot.src = srcArray[i];
-    i = (i + 1) % colorArray.length;
-  }, 1000);
+    //ring buffer
+    let i = 0;
+    return setInterval(function() {
+        div.style.backgroundColor = colorArray[i];
+        robot.src = srcArray[i];
+        i = (i + 1) % colorArray.length;
+    }, 1000);
 }
 let intervalDance;
 buttonStopDance.addEventListener("click", () => {
-  beat.pause();
-  beat.currentTime = 0;
-  clearInterval(intervalDance);
+    beat.pause();
+    beat.currentTime = 0;
+    clearInterval(intervalDance);
 });
 
 //crear intervalo
 function intervalDancing(robot) {
-  intervalDance = danceRobot(robot);
+    intervalDance = danceRobot(robot);
 
-  beat.addEventListener("ended", () => {
-    clearInterval(intervalDance);
-  });
+    beat.addEventListener("ended", () => {
+        clearInterval(intervalDance);
+    });
 }
 //
