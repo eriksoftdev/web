@@ -30,6 +30,7 @@ const colorArray = [
     "#33CC33",
 ]
 
+//Mover robot
 
 let beat = new Audio("audio/beat.ogg")
 let intervalId
